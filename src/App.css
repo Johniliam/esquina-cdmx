@@ -1,6 +1,28 @@
+@font-face {
+  font-family: Quando;
+  src: url(fonts/Quando-Regular.ttf);
+}
+
+@font-face {
+  font-family: BillisJaffna;
+  src: url(fonts/PostNoBillsJaffna-ExtraBold.ttf);
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-size: 40px;
 }
 
 body,
@@ -14,7 +36,88 @@ img {
   flex-direction: column;
   height: 1500px;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   background-position: center;
   background-image: url("images/bgPaint.jpg");
   /* background-attachment: fixed; */
+}
+
+/* Navbar CSS */
+
+.navbarStatic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+  width: 85%;
+  height: 150px;
+  border-radius: 45px;
+  background-color: rgba(249, 249, 249, 90%);
+}
+
+.topPinkLine {
+  width: 90%;
+  height: 10px;
+  border-radius: 50px;
+  margin-top: 10px;
+  background-color: #f50087;
+}
+
+.logo {
+  display: flex;
+  width: 87%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-family: Quando;
+  letter-spacing: 1px;
+  cursor: default;
+}
+
+.bottomTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.imgLogo {
+  position: relative;
+  width: 150px;
+  height: 100px;
+  right: 55px;
+}
+
+.navigator {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 10px;
+  margin-bottom: 10px;
+}
+
+.botPinkBar {
+  height: 10px;
+  flex: 6;
+  border-radius: 50px;
+  background-color: #f50087;
+}
+
+.navItem {
+  height: 10px;
+  flex-wrap: wrap;
+  margin-left: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 50px;
+  background-color: #f50087;
+}
+
+.navItemText {
+  position: relative;
+  bottom: 22px;
+  font-family: BillisJaffna;
+  cursor: pointer;
 }
