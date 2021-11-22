@@ -1,4 +1,4 @@
-### `Esquina-CDMX`
+### `ESQUINA-CDMX`
 
 Restaurant prototipe page for marketing.
 

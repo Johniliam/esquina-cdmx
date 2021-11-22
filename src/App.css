@@ -49,18 +49,18 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-top: 5px;
   width: 85%;
-  height: 150px;
+  height: 140px;
   border-radius: 45px;
   background-color: rgba(249, 249, 249, 90%);
 }
 
 .topPinkLine {
   width: 90%;
-  height: 10px;
+  height: 7px;
   border-radius: 50px;
-  margin-top: 10px;
   background-color: #f50087;
 }
 
@@ -95,23 +95,29 @@ img {
   flex-direction: row;
   width: 90%;
   height: 10px;
-  margin-bottom: 10px;
 }
 
 .botPinkBar {
-  height: 10px;
+  height: 7px;
   flex: 6;
   border-radius: 50px;
   background-color: #f50087;
 }
 
 .navItem {
-  height: 10px;
+  height: 7px;
   flex-wrap: wrap;
   margin-left: 5px;
   padding-left: 3px;
   padding-right: 3px;
   border-radius: 50px;
+}
+
+.navItem.active {
+  background-color: #f50087;
+}
+
+.navItem:hover {
   background-color: #f50087;
 }
 
@@ -120,4 +126,37 @@ img {
   bottom: 22px;
   font-family: BillisJaffna;
   cursor: pointer;
+}
+
+/* Navbar Dinamic */
+
+.navbarDinamic {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  width: 85%;
+  height: 45px;
+  border-radius: 45px;
+  background-color: rgba(249, 249, 249, 90%);
+}
+
+.letrasLogoLinear {
+  display: flex;
+  flex-direction: row;
+}
+
+.logoD {
+  display: flex;
+  width: 87%;
+}
+
+.imgLogoD {
+  position: relative;
+  width: 45px;
+  height: 30px;
+  left: 5px;
+  bottom: 1px;
 }
