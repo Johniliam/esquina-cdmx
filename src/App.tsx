@@ -19,10 +19,8 @@ const App = () => {
 
   return (
     <div className='background'>
+      <NavBarDinamic visibility={navbar}/>
       <NavBarStatic visibility={!navbar}/>
-      {
-        navbar ? <NavBarDinamic/> : <></>
-      }
       <section id='section0'>
         <h2>Inicio</h2>
       </section>
