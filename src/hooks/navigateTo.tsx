@@ -1,7 +1,7 @@
 const navigateTo = (dest: number) => {
     switch (dest) {
         case 0:
-            window.scrollTo(0,100)
+            window.scrollTo(0,0)
             break;
         case 1:
             window.scrollTo(0,200)
