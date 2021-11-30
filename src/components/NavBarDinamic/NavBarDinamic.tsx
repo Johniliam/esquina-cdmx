@@ -1,6 +1,6 @@
 import React from 'react'
-import navigateTo from '../../hooks/navigateTo'
 import chileLogo from '../../images/chile.png'
+import navTo from '../../utils/navTo';
 
 interface Props {
     visibility: boolean
@@ -61,19 +61,19 @@ const NavBarDinamic = ( {visibility}: Props ) => {
             <nav className='navigator'>
                 <li className='botPinkBar'></li>
                 <li id='iniIndicator' className='navItemD section0'>
-                    <h4 onClick={() => navigateTo(0)} className='navItemText'>Inicio</h4>
+                    <h4 onClick={() => navTo(0)} className='navItemText'>Inicio</h4>
                 </li>
                 <li id='menuIndicator' className='navItemD section1'>
-                    <h4 onClick={() => navigateTo(1)} className='navItemText'>Menú</h4>
+                    <h4 onClick={() => navTo(1)} className='navItemText'>Menú</h4>
                 </li>
                 <li id='sucIndicator' className='navItemD section2'>
-                    <h4 onClick={() => navigateTo(2)} className='navItemText'>Sucursales</h4>
+                    <h4 onClick={() => navTo(2)} className='navItemText'>Sucursales</h4>
                 </li>
                 <li id='nosIndicator' className='navItemD section3'>
-                    <h4 onClick={() => navigateTo(3)} className='navItemText'>Nosotros</h4>
+                    <h4 onClick={() => navTo(3)} className='navItemText'>Nosotros</h4>
                 </li>
                 <li id='franqIndicator' className='navItemD section4'>
-                    <h4 onClick={() => navigateTo(4)} className='navItemText'>Franquicias</h4>
+                    <h4 onClick={() => navTo(4)} className='navItemText'>Franquicias</h4>
                 </li>
             </nav>
         </div>

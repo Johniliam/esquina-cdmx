@@ -7,9 +7,11 @@ interface Props {
     name: string
 }
 
+
+
 const MiniPhotoMenu = ( { image, name } : Props) => {
     return (
-        <div className='photoBG mini'>
+        <div className='photoBG mini' onClick={() => console.log('change to: ' + name)}> 
             <div className='displayPhotoContainer'>
                 <div className='photoContent mini'>
                     <div className='tachuela'>

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './App.css';
 import NavBarDinamic from './components/NavBarDinamic';
 import NavBarStatic from './components/NavBarStatic/NavBarStatic';
@@ -10,6 +9,7 @@ import sopesImg from './images/sopes.jpg'
 import tacosImg from './images/tacos.jpg'
 import tostadasImg from './images/tostadas.jpeg'
 import ProxImg from './images/proximamente.jpg'
+import { useNavbar } from './hooks/useNavbar';
 
 const App = () => {
 
@@ -17,17 +17,7 @@ const App = () => {
 
   const options = ['Papa', 'Tinga', 'Pollo', 'Hongos', 'Cochinita', 'Chicharron', 'Flor de calabaza']
 
-  const [navbar, setDinamicNavbar] = useState(false)
-
-  const changeNabar = () => {
-    if (window.scrollY >= 90) {
-      setDinamicNavbar(true)
-    } else{
-      setDinamicNavbar(false)
-    }
-  }
-
-  window.addEventListener('scroll', changeNabar)
+  const navbar = useNavbar()
 
   return (
     <div className='background'>
@@ -43,7 +33,7 @@ const App = () => {
           <section id='section1'>
             <h2>Menú</h2>
             <div className='menuContainer'>
-              <PhotoMenuDetails image={pozoleImg} name='Pozole' description={desc} options={options}/>
+              <PhotoMenuDetails image={quesadillaImg} name='Quesadilla' description={desc} options={options}/>
               <div className='miniPhotosContainer'>
                 <MiniPhotoMenu image={pozoleImg} name='Pozole'/>
                 <MiniPhotoMenu image={quesadillaImg} name='Quesadillas'/>

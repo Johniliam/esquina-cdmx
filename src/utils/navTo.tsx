@@ -1,4 +1,4 @@
-const navigateTo = (dest: number) => {
+const navTo = (dest: number) => {
     switch (dest) {
         case 0:
             window.scrollTo(0,0)
@@ -21,4 +21,4 @@ const navigateTo = (dest: number) => {
     }
 }
 
-export default navigateTo
+export default navTo
