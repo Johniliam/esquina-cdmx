@@ -4,10 +4,10 @@ const navTo = (dest: number) => {
             window.scrollTo(0,0)
             break;
         case 1:
-            window.scrollTo(0,200)
+            window.scrollTo(0,530)
             break;
         case 2:
-            window.scrollTo(0,295)
+            window.scrollTo(0,1260)
             break;
         case 3:
             window.scrollTo(0,390)

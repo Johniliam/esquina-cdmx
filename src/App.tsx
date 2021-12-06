@@ -10,6 +10,9 @@ import tacosImg from './images/tacos.jpg'
 import tostadasImg from './images/tostadas.jpeg'
 import ProxImg from './images/proximamente.jpg'
 import { useNavbar } from './hooks/useNavbar';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import navTo from './utils/navTo';
 
 const App = () => {
 
@@ -20,77 +23,96 @@ const App = () => {
   const navbar = useNavbar()
 
   return (
-    <div className='background'>
-      <div className='content'> {/*  TODO: es necesario? */}
-        <NavBarStatic visibility={!navbar}/>
-        <NavBarDinamic visibility={navbar}/>
-        <div className='sectionsContainer'>
-          <section id='section0'>
-            <h2>Inicio</h2>
-          </section>
-          <p>Hola</p>
-          <p>Hola</p>
-          <section id='section1'>
-            <h2>Menú</h2>
-            <div className='menuContainer'>
-              <PhotoMenuDetails image={quesadillaImg} name='Quesadilla' description={desc} options={options}/>
-              <div className='miniPhotosContainer'>
-                <MiniPhotoMenu image={pozoleImg} name='Pozole'/>
-                <MiniPhotoMenu image={quesadillaImg} name='Quesadillas'/>
-                <MiniPhotoMenu image={sopesImg} name='Sopes'/>
-                <MiniPhotoMenu image={tacosImg} name='Tacos'/>
-                <MiniPhotoMenu image={tostadasImg} name='Tostadas'/>
-                <MiniPhotoMenu image={ProxImg} name='Mas...'/>
+    <div>
+      <div className='background'>
+        <div className='content'> {/*  TODO: es necesario? */}
+          <NavBarStatic visibility={!navbar}/>
+          <NavBarDinamic visibility={navbar}/>
+          <div className='sectionsContainer'>
+            <section id='section0'>
+              <div className='inicioBG'>
+                <div className='cover'>
+                    <h2 className='pink'>YA ABRIMOS 🎉</h2>
+                    <h2>VE NUESTRO MENU AHORA Y ORDENA</h2>
+                    <h2>O RESERVA AHORA MISMO</h2>
+                    <div className='buttonsContainer'>
+                      <button className='left-button' onClick={() => navTo(1)}>
+                        <h2>VER</h2>
+                        <h2>MENU</h2>
+                      </button>
+                      <button className='right-button'>
+                        <div className='row'>
+                          <div>
+                            <h2>RESERVA</h2>
+                            <h2>AHORA</h2>
+                          </div>
+                          <FontAwesomeIcon className='whatsIcon' icon={faWhatsapp} size='3x'/>  
+                        </div>
+                      </button>
+                    </div>
+                </div>
+                <div className='bloqueR'></div>
               </div>
-            </div>
-          </section>
-          <p>Hola</p>
-          <p>Hola</p>
-          <section id='section2'>
-            <h2>Sucursales</h2>
-          </section>
-          <p>Hola</p>
-          <p>Hola</p>
-          <section id='section3'>
-            <h2>Nosotros</h2>
-          </section>
-          <p>Hola</p>
-          <p>Hola</p>
-          <section id='section4'>
-            <h2>Franquicias</h2>
-          </section>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
-          <p>Hola</p>
+            </section>
+            <section id='section1'>
+              <div className='menuContainer'>
+                <PhotoMenuDetails image={quesadillaImg} name='Quesadilla' description={desc} options={options}/>
+                <div className='miniPhotosContainer'>
+                  <MiniPhotoMenu image={pozoleImg} name='Pozole'/>
+                  <MiniPhotoMenu image={quesadillaImg} name='Quesadillas'/>
+                  <MiniPhotoMenu image={sopesImg} name='Sopes'/>
+                  <MiniPhotoMenu image={tacosImg} name='Tacos'/>
+                  <MiniPhotoMenu image={tostadasImg} name='Tostadas'/>
+                  <MiniPhotoMenu image={ProxImg} name='Mas...'/>
+                </div>
+              </div>
+            </section>
+            <section id='section2'>
+              <h2>Sucursales</h2>
+            </section>
+            <p>Hola</p>
+            <p>Hola</p>
+            <section id='section3'>
+              <h2>Nosotros</h2>
+            </section>
+            <p>Hola</p>
+            <p>Hola</p>
+            <section id='section4'>
+              <h2>Franquicias</h2>
+            </section>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+            <p>Hola</p>
+          </div>
         </div>
       </div>
     </div>
