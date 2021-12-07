@@ -455,3 +455,29 @@ section#section0 h2.pink {
   width: 50%;
   float: left;
 }
+
+/* SUCURSALES */
+
+#section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+/* NOSOTROS */
+
+#section3 {
+  padding-top: 20px;
+}
+
+.nosotrosContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* FRANQUICIAS */
+
+#section4 {
+  padding-top: 20px;
+}

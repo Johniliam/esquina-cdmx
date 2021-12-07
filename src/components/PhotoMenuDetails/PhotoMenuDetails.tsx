@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import tachuela from '../../images/tachuela.png'
 
 interface Props {

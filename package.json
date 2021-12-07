@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
-    "@fortawesome/free-brands-svg-icons": "^5.15.4"
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@react-google-maps/api": "^2.7.0"
   }
 }

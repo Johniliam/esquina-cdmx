@@ -1,13 +1,9 @@
-import { url } from 'inspector'
-import React from 'react'
 import tachuela from '../../images/tachuela.png'
 
 interface Props {
     image: string
     name: string
 }
-
-
 
 const MiniPhotoMenu = ( { image, name } : Props) => {
     return (

@@ -10,10 +10,10 @@ const navTo = (dest: number) => {
             window.scrollTo(0,1260)
             break;
         case 3:
-            window.scrollTo(0,390)
+            window.scrollTo(0,1750)
             break;
         case 4:
-            window.scrollTo(0,490)
+            window.scrollTo(0,2200)
             break;        
         default:
             window.location.href = '#';

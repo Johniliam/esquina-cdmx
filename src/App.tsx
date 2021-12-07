@@ -1,18 +1,24 @@
 import './App.css';
-import NavBarDinamic from './components/NavBarDinamic';
-import NavBarStatic from './components/NavBarStatic/NavBarStatic';
-import MiniPhotoMenu from './components/MiniPhotoMenu/MiniPhotoMenu';
-import PhotoMenuDetails from './components/PhotoMenuDetails';
-import pozoleImg from './images/pozole.jpg'
-import quesadillaImg from './images/quesadilla.jpg'
-import sopesImg from './images/sopes.jpg'
-import tacosImg from './images/tacos.jpg'
-import tostadasImg from './images/tostadas.jpeg'
-import ProxImg from './images/proximamente.jpg'
-import { useNavbar } from './hooks/useNavbar';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import navTo from './utils/navTo';
+import MapContainer from './components/Map';
+import { useNavbar } from './hooks/useNavbar';
+import InfoDisplay from './components/InfoDisplay'
+import NavBarDinamic from './components/NavBarDinamic';
+import PhotoMenuDetails from './components/PhotoMenuDetails';
+import NavBarStatic from './components/NavBarStatic/NavBarStatic';
+import MiniPhotoMenu from './components/MiniPhotoMenu/MiniPhotoMenu';
+
+import tacosImg from './images/tacos.jpg'
+import sopesImg from './images/sopes.jpg'
+import pozoleImg from './images/pozole.jpg'
+import ProxImg from './images/proximamente.jpg'
+import tostadasImg from './images/tostadas.jpeg'
+import quesadillaImg from './images/quesadilla.jpg'
+import staff from './images/staff.jpg'
+import yoav from './images/yoav.jpg'
 
 const App = () => {
 
@@ -69,9 +75,8 @@ const App = () => {
             </section>
             <section id='section2'>
               <h2>Sucursales</h2>
+              <MapContainer/>
             </section>
-            <p>Hola</p>
-            <p>Hola</p>
             <section id='section3'>
               <h2>Nosotros</h2>
             </section>
@@ -79,39 +84,80 @@ const App = () => {
             <p>Hola</p>
             <section id='section4'>
               <h2>Franquicias</h2>
+              <InfoDisplay img={staff} info={'Texto'}/>
+              <InfoDisplay img={staff} info={'Muuuucho texto'}/>
             </section>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
-            <p>Hola</p>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
           </div>
         </div>
       </div>
