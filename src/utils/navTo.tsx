@@ -1,19 +1,19 @@
 const navTo = (dest: number) => {
     switch (dest) {
         case 0:
-            window.scrollTo(0,0)
+            window.location.href = '#section0';
             break;
         case 1:
-            window.scrollTo(0,530)
+            window.location.href = '#section1';
             break;
         case 2:
-            window.scrollTo(0,1260)
+            window.location.href = '#section2';
             break;
         case 3:
-            window.scrollTo(0,1750)
+            window.location.href = '#section3';
             break;
         case 4:
-            window.scrollTo(0,2200)
+            window.location.href = '#section4';
             break;        
         default:
             window.location.href = '#';

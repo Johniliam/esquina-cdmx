@@ -1,3 +1,11 @@
+#section0,
+#section1,
+#section2,
+#section3,
+#section4 {
+  scroll-margin-top: 40px;
+}
+
 @font-face {
   font-family: Quando;
   src: url(fonts/Quando-Regular.ttf);
@@ -42,14 +50,18 @@ h1 {
 }
 
 h2,
+h3,
 p {
   text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 body,
 div,
 img {
   display: block;
+  object-fit: contain;
+  max-width: 100%;
 }
 
 .background {
@@ -280,7 +292,6 @@ section#section0 h2.pink {
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: Arial;
   font-size: 17px;
   padding: 16px 31px;
   text-decoration: none;
@@ -300,7 +311,6 @@ section#section0 h2.pink {
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: Arial;
   font-size: 17px;
   padding: 16px 31px;
   text-decoration: none;
@@ -447,7 +457,7 @@ section#section0 h2.pink {
   text-align: left;
   margin-left: 30px;
   width: 50%;
-  font-family: sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .photoOptions li {
@@ -468,16 +478,76 @@ section#section0 h2.pink {
 /* NOSOTROS */
 
 #section3 {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
   padding-top: 20px;
 }
 
-.nosotrosContainer {
-  display: flex;
-  justify-content: space-between;
+.infoStructure {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  margin-top: 25px;
+}
+
+.logoTitle {
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 /* FRANQUICIAS */
 
 #section4 {
   padding-top: 20px;
+  margin-bottom: 100px;
+}
+
+.franqContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 250px;
+  background-color: black;
+  margin-top: 20px;
+  margin-bottom: 330px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.franqContainer h2 {
+  color: #ffffff;
+}
+
+/* FOOTER */
+
+.footContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 160px;
+  background-color: grey;
+}
+
+.footContainer p {
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.direction,
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footTitle {
+  margin-left: 20px;
+  font-size: 20px;
+  margin-bottom: 5px;
 }

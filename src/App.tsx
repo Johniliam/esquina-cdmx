@@ -1,6 +1,7 @@
 import './App.css';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faGlasses, faQuestion, faHeart } from '@fortawesome/free-solid-svg-icons';
 
 import navTo from './utils/navTo';
 import MapContainer from './components/Map';
@@ -17,8 +18,8 @@ import pozoleImg from './images/pozole.jpg'
 import ProxImg from './images/proximamente.jpg'
 import tostadasImg from './images/tostadas.jpeg'
 import quesadillaImg from './images/quesadilla.jpg'
-import staff from './images/staff.jpg'
-import yoav from './images/yoav.jpg'
+import Franquicias from './components/Franquicias';
+import Footer from './components/Footer';
 
 const App = () => {
 
@@ -78,88 +79,20 @@ const App = () => {
               <MapContainer/>
             </section>
             <section id='section3'>
-              <h2>Nosotros</h2>
+              <h2>Quienes Somos</h2>
+              <div className='infoStructure'>
+                <InfoDisplay icon={faGlasses} title='Vision' info='Brindar la mejor calidad y servicio posible en cada visita de nuestros comensales y ser representantes globales y nacionales de la gastronomía mexicana.'/>
+                <InfoDisplay icon={faQuestion} title='Mision' info='Ser una empresa posicionada a nivel global siento la principal cadera representante de comida típica mexicana y no solo de la zona centro del país.'/>
+                <InfoDisplay icon={faHeart} title='Valores' info='Honestidad, Lealtad, Respeto, Actitud de Servicio, Calidad, Higiene, Ambiente cordial, Trabajo en Equipo, Tradición, Liderazgo.'/>
+              </div>
             </section>
-            <p>Hola</p>
-            <p>Hola</p>
             <section id='section4'>
               <h2>Franquicias</h2>
-              <InfoDisplay img={staff} info={'Texto'}/>
-              <InfoDisplay img={staff} info={'Muuuucho texto'}/>
+              <Franquicias/>
             </section>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
-            <h2>Hola</h2>
           </div>
         </div>
+        <Footer/>
       </div>
     </div>
   );

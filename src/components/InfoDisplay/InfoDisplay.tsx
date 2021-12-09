@@ -1,14 +1,21 @@
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface Props{
-    img: string;
+    icon: IconProp;
+    title: string;
     info: string;
 }
 
-const InfoDisplay = ( { img, info } : Props ) => {
+const InfoDisplay = ( { icon, info, title } : Props ) => {
     return (
         <div className='nosotrosContainer'>
-            <img src={img} alt="" />
+            <div>
+                <p><FontAwesomeIcon icon={icon} size='3x'/></p>
+                <h3 className='logoTitle'>{title}</h3>
+            </div>
+            <p className='infoText'>{info}</p>
         </div>
     )
 }
