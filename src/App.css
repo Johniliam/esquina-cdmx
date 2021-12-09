@@ -65,7 +65,6 @@ img {
 }
 
 .background {
-  flex-wrap: wrap;
   background-position: center;
   background-image: url("images/bgPaint.jpg");
   /* background-attachment: fixed; */
@@ -149,6 +148,14 @@ img {
   background-color: #f50087;
 }
 
+.botPinkBar.left {
+  margin-right: 2px;
+}
+
+.botPinkBar.right {
+  margin-left: 4px;
+}
+
 .navItem {
   height: 7px;
   flex-wrap: wrap;
@@ -190,6 +197,30 @@ img {
   cursor: pointer;
 }
 
+@media screen and (max-width: 770px) {
+  .imgLogo {
+    height: 90px;
+  }
+
+  .navbarStatic .navigator {
+    margin-top: 7px;
+  }
+
+  .navbarDinamic .navigator {
+    margin-top: 20px;
+  }
+
+  .logoD {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .botPinkBar.right {
+    display: none;
+  }
+}
+
 /* NAVBAR DINAMIC */
 
 .navbarDinamic {
@@ -202,7 +233,7 @@ img {
   top: 5px;
   bottom: 40;
   width: 85%;
-  height: 45px;
+  height: 60px;
   border-radius: 45px;
   background-color: rgba(249, 249, 249, 95%);
 }
@@ -220,9 +251,8 @@ img {
 .imgLogoD {
   position: relative;
   width: 45px;
-  height: 30px;
+  height: 26px;
   left: 5px;
-  bottom: 1px;
 }
 
 /* INICIO CSS */
@@ -364,6 +394,7 @@ section#section0 h2.pink {
 .photoBG.details {
   max-height: 700px;
   max-width: 1600px;
+  min-width: 230px;
 }
 
 .displayPhotoContainer {
@@ -456,7 +487,7 @@ section#section0 h2.pink {
 .photoOptions {
   text-align: left;
   margin-left: 30px;
-  width: 50%;
+  width: 90%;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -464,6 +495,52 @@ section#section0 h2.pink {
   list-style-type: square;
   width: 50%;
   float: left;
+}
+
+/* MENU MOVILE */
+
+@media screen and (max-width: 600px) {
+  .menuContainer {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+  }
+
+  .miniPhotosContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+  }
+
+  .photoBG.details {
+    min-width: auto;
+  }
+
+  .displayPhotoContainer {
+    min-width: auto;
+  }
+
+  .botPinkBar {
+    display: none;
+  }
+
+  .topPinkLine {
+    width: 85%;
+  }
+
+  .navigator {
+    justify-content: center;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .cover {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 /* SUCURSALES */
@@ -506,7 +583,6 @@ section#section0 h2.pink {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
   height: 250px;
   background-color: black;
   margin-top: 20px;
@@ -525,7 +601,7 @@ section#section0 h2.pink {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  height: 160px;
+  padding-bottom: 20px;
   background-color: grey;
 }
 

@@ -35,19 +35,6 @@ const NavBarDinamic = ( {visibility}: Props ) => {
     activeMenu()
     window.addEventListener("scroll", activeMenu)
 
-    // const li = document.querySelectorAll(".navItemD");
-    // const sections = document.querySelectorAll("section");
-
-    // const activeMenu = () => {
-    //     let len = sections.length
-    //     while (--len && window.scrollY + 97 < sections[len].offsetTop) {}
-    //     li.forEach(ltx => ltx.classList.remove('active'));
-    //     li[len].classList.add('active');
-    // }
-    // activeMenu()
-    // window.addEventListener("scroll", activeMenu)
-
-
     return (
         <div className='navbarDinamic' style={!visibility ? {visibility: 'hidden'}: {visibility:'visible'}}>
             <div className='logoD'>
@@ -59,7 +46,7 @@ const NavBarDinamic = ( {visibility}: Props ) => {
                 <img src={chileLogo} alt='logo' className='imgLogoD'/>
             </div>
             <nav className='navigator'>
-                <li className='botPinkBar'></li>
+                <li className='botPinkBar left'></li>
                 <li id='iniIndicator' className='navItemD section0'>
                     <h4 onClick={() => navTo(0)} className='navItemText'>Inicio</h4>
                 </li>
@@ -75,6 +62,7 @@ const NavBarDinamic = ( {visibility}: Props ) => {
                 <li id='franqIndicator' className='navItemD section4'>
                     <h4 onClick={() => navTo(4)} className='navItemText'>Franquicias</h4>
                 </li>
+                <li id='rightPinkBar' className='botPinkBar right'></li>
             </nav>
         </div>
     )
