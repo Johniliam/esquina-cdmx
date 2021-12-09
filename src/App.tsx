@@ -20,6 +20,7 @@ import tostadasImg from './images/tostadas.jpeg'
 import quesadillaImg from './images/quesadilla.jpg'
 import Franquicias from './components/Franquicias';
 import Footer from './components/Footer';
+import { useEffect } from 'react';
 
 const App = () => {
 
@@ -28,6 +29,14 @@ const App = () => {
   const options = ['Papa', 'Tinga', 'Pollo', 'Hongos', 'Cochinita', 'Chicharron', 'Flor de calabaza']
 
   const navbar = useNavbar()
+
+  useEffect(() => {
+    if (window.performance) {
+      if (performance.navigation.type === 1) { //TODO: Deprecated
+        window.location.href = '';
+      }
+    }
+  }, [])
 
   return (
     <div>
@@ -47,7 +56,7 @@ const App = () => {
                         <h2>VER</h2>
                         <h2>MENU</h2>
                       </button>
-                      <button className='right-button'>
+                      <button className='right-button' onClick={() => navTo(4)}>
                         <div className='row'>
                           <div>
                             <h2>RESERVA</h2>
