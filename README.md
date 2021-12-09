@@ -2,7 +2,7 @@
 
 Restaurant prototipe page for marketing.
 
-Page deployed at https://johniliam.github.io/esquina-CDMX/ (work in progress).
+Page deployed at https://johniliam.github.io/esquina-cdmx/ (work in progress).
 
 In the project directory, you can run:
 
