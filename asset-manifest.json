@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/esquina-cdmx/static/css/main.20e7dd5f.chunk.css",
-    "main.js": "/esquina-cdmx/static/js/main.9f82a434.chunk.js",
-    "main.js.map": "/esquina-cdmx/static/js/main.9f82a434.chunk.js.map",
+    "main.css": "/esquina-cdmx/static/css/main.ca2ffdc9.chunk.css",
+    "main.js": "/esquina-cdmx/static/js/main.e025761e.chunk.js",
+    "main.js.map": "/esquina-cdmx/static/js/main.e025761e.chunk.js.map",
     "runtime-main.js": "/esquina-cdmx/static/js/runtime-main.2bf4c704.js",
     "runtime-main.js.map": "/esquina-cdmx/static/js/runtime-main.2bf4c704.js.map",
     "static/js/2.b6763f11.chunk.js": "/esquina-cdmx/static/js/2.b6763f11.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.66c70cd3.chunk.js": "/esquina-cdmx/static/js/3.66c70cd3.chunk.js",
     "static/js/3.66c70cd3.chunk.js.map": "/esquina-cdmx/static/js/3.66c70cd3.chunk.js.map",
     "index.html": "/esquina-cdmx/index.html",
-    "static/css/main.20e7dd5f.chunk.css.map": "/esquina-cdmx/static/css/main.20e7dd5f.chunk.css.map",
+    "static/css/main.ca2ffdc9.chunk.css.map": "/esquina-cdmx/static/css/main.ca2ffdc9.chunk.css.map",
     "static/js/2.b6763f11.chunk.js.LICENSE.txt": "/esquina-cdmx/static/js/2.b6763f11.chunk.js.LICENSE.txt",
     "static/media/App.css": "/esquina-cdmx/static/media/restaurant.ef35800c.jpg",
     "static/media/chile.77801bb8.png": "/esquina-cdmx/static/media/chile.77801bb8.png",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.2bf4c704.js",
     "static/js/2.b6763f11.chunk.js",
-    "static/css/main.20e7dd5f.chunk.css",
-    "static/js/main.9f82a434.chunk.js"
+    "static/css/main.ca2ffdc9.chunk.css",
+    "static/js/main.e025761e.chunk.js"
   ]
 }
