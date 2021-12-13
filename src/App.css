@@ -3,7 +3,7 @@
 #section2,
 #section3,
 #section4 {
-  scroll-margin-top: 40px;
+  scroll-margin-top: 50px;
 }
 
 @font-face {
@@ -62,6 +62,11 @@ img {
   display: block;
   object-fit: contain;
   max-width: 100%;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: center;
 }
 
 .background {
@@ -229,10 +234,11 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  align-self: center;
   z-index: 1;
   top: 5px;
   bottom: 40;
-  width: 85%;
+  width: 88%;
   height: 60px;
   border-radius: 45px;
   background-color: rgba(249, 249, 249, 95%);
@@ -382,7 +388,7 @@ section#section0 h2.pink {
 
 .photoBG {
   width: 100%;
-  min-height: auto;
+  max-height: auto;
   background-color: rgba(249, 249, 249, 100%);
   border-style: solid;
   border-color: black;
@@ -390,10 +396,11 @@ section#section0 h2.pink {
 
 .photoBG.mini {
   max-width: auto;
+  cursor: pointer;
 }
 
 .photoBG.details {
-  max-height: auto;
+  max-height: 850px;
   max-width: auto;
   min-width: auto;
 }
@@ -442,19 +449,6 @@ section#section0 h2.pink {
   object-fit: cover;
 }
 
-.photoTitle {
-  font-family: HandWritten;
-  font-size: 40px;
-  text-align: left;
-}
-
-.photoTitle.mini {
-  font-family: HandWritten;
-  font-size: 20px;
-  margin-bottom: 2%;
-  text-align: center;
-}
-
 .tachuela {
   position: relative;
   bottom: 32px;
@@ -478,6 +472,29 @@ section#section0 h2.pink {
   width: 90%;
   justify-content: space-evenly;
   flex: 1;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.photoTitle {
+  font-family: HandWritten;
+  font-size: 40px;
+  text-align: left;
+}
+
+.photoTitle.price {
+  color: #f50087;
+}
+
+.photoTitle.mini {
+  font-family: HandWritten;
+  font-size: 20px;
+  margin-bottom: 2%;
+  text-align: center;
 }
 
 .photoText {
@@ -658,7 +675,7 @@ section#section0 h2.pink {
   height: 250px;
   background-color: black;
   margin-top: 20px;
-  margin-bottom: 330px;
+  margin-bottom: 40%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -700,6 +717,6 @@ section#section0 h2.pink {
 
 .footTitle {
   margin-left: 20px;
-  font-size: 10px;
+  font-size: 20px;
   margin-bottom: 5px;
 }

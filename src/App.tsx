@@ -20,14 +20,9 @@ import tostadasImg from './images/tostadas.jpeg'
 import quesadillaImg from './images/quesadilla.jpg'
 import Franquicias from './components/Franquicias';
 import Footer from './components/Footer';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const App = () => {
-
-  const desc = 'Antojito mexicano que consiste en una tortilla de masa de maíz o de harina de trigo doblada a la mitad en forma de media luna, rellena con queso fresco derretido y un guiso:'
-
-  const options = ['Papa', 'Tinga', 'Pollo', 'Hongos', 'Cochinita', 'Chicharron', 'Flor de calabaza']
-
   const navbar = useNavbar()
 
   useEffect(() => {
@@ -38,12 +33,16 @@ const App = () => {
     }
   }, [])
 
+  const [selection, setSelection] = useState('Quesadilla')
+
   return (
     <div>
+      <div className='navbarContainer'>
+        <NavBarStatic visibility={!navbar}/>
+        <NavBarDinamic visibility={navbar}/>
+      </div>
       <div className='background'>
         <div className='content'> {/*  TODO: es necesario? */}
-          <NavBarStatic visibility={!navbar}/>
-          <NavBarDinamic visibility={navbar}/>
           <div className='sectionsContainer'>
             <section id='section0'>
               <div className='inicioBG'>
@@ -71,15 +70,27 @@ const App = () => {
               </div>
             </section>
             <section id='section1'>
-              <div className='menuContainer'>
-                <PhotoMenuDetails image={quesadillaImg} name='Quesadilla' description={desc} options={options}/>
+              <div id='menuContainer' className='menuContainer'>
+                <PhotoMenuDetails name={selection} />
                 <div className='miniPhotosContainer'>
-                  <MiniPhotoMenu image={pozoleImg} name='Pozole'/>
-                  <MiniPhotoMenu image={quesadillaImg} name='Quesadillas'/>
-                  <MiniPhotoMenu image={sopesImg} name='Sopes'/>
-                  <MiniPhotoMenu image={tacosImg} name='Tacos'/>
-                  <MiniPhotoMenu image={tostadasImg} name='Tostadas'/>
-                  <MiniPhotoMenu image={ProxImg} name='Mas...'/>
+                  <div className='photoBG mini' onClick={ () => setSelection('Quesadillas')}>
+                    <MiniPhotoMenu image={quesadillaImg} name='Quesadillas' />
+                  </div>
+                  <div className='photoBG mini' onClick={ () => setSelection('Pozole')}>
+                    <MiniPhotoMenu image={pozoleImg} name='Pozole' />
+                  </div>
+                  <div className='photoBG mini' onClick={ () => setSelection('Sopes')}>
+                    <MiniPhotoMenu image={sopesImg} name='Sopes' />
+                  </div>
+                  <div className='photoBG mini' onClick={ () => setSelection('Tacos')}>
+                    <MiniPhotoMenu image={tacosImg} name='Tacos' />
+                  </div>
+                  <div className='photoBG mini' onClick={ () => { setSelection('Tostadas')}}>
+                    <MiniPhotoMenu image={tostadasImg} name='Tostadas' />
+                  </div>
+                  <div className='photoBG mini' >
+                    <MiniPhotoMenu image={ProxImg} name='Mas...' />
+                  </div>
                 </div>
               </div>
             </section>
