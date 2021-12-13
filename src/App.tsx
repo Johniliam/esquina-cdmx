@@ -56,13 +56,13 @@ const App = () => {
                         <h2>VER</h2>
                         <h2>MENU</h2>
                       </button>
-                      <button className='right-button' onClick={() => navTo(4)}>
+                      <button className='right-button' onClick={() => navTo(5)}>
                         <div className='row'>
                           <div>
                             <h2>RESERVA</h2>
                             <h2>AHORA</h2>
                           </div>
-                          <FontAwesomeIcon className='whatsIcon' icon={faWhatsapp} size='3x'/>  
+                          <p className='whatsIcon'><FontAwesomeIcon icon={faWhatsapp}/></p>  
                         </div>
                       </button>
                     </div>
@@ -101,7 +101,9 @@ const App = () => {
             </section>
           </div>
         </div>
-        <Footer/>
+        <section id='section5'>
+          <Footer/>
+        </section>
       </div>
     </div>
   );

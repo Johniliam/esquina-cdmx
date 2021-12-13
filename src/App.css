@@ -203,7 +203,7 @@ img {
   }
 
   .navbarStatic .navigator {
-    margin-top: 7px;
+    margin-top: 10px;
   }
 
   .navbarDinamic .navigator {
@@ -313,6 +313,7 @@ section#section0 h2.pink {
 
 .whatsIcon {
   margin-left: 10px;
+  font-size: 50px;
 }
 
 .right-button {
@@ -368,7 +369,7 @@ section#section0 h2.pink {
 
 .menuContainer {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 3fr 1fr;
   column-gap: 30px;
 }
 
@@ -381,27 +382,27 @@ section#section0 h2.pink {
 
 .photoBG {
   width: 100%;
-  min-height: 180px;
+  min-height: auto;
   background-color: rgba(249, 249, 249, 100%);
   border-style: solid;
   border-color: black;
 }
 
 .photoBG.mini {
-  max-width: 150px;
+  max-width: auto;
 }
 
 .photoBG.details {
-  max-height: 700px;
-  max-width: 1600px;
-  min-width: 230px;
+  max-height: auto;
+  max-width: auto;
+  min-width: auto;
 }
 
 .displayPhotoContainer {
   display: flex;
   height: 100%;
   width: 100%;
-  min-width: 120px;
+  min-width: auto;
   justify-content: center;
 }
 
@@ -514,14 +515,6 @@ section#section0 h2.pink {
     column-gap: 10px;
   }
 
-  .photoBG.details {
-    min-width: auto;
-  }
-
-  .displayPhotoContainer {
-    min-width: auto;
-  }
-
   .botPinkBar {
     display: none;
   }
@@ -537,9 +530,88 @@ section#section0 h2.pink {
 }
 
 @media screen and (max-width: 475px) {
+  .miniPhotosContainer {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+  }
+
   .cover {
     margin-left: 10px;
     margin-right: 10px;
+    width: auto;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  section h2 {
+    font-size: 15px !important;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  li {
+    font-size: 12px;
+  }
+
+  .imgLogo {
+    width: 75px;
+    margin-left: 15%;
+  }
+
+  .letrasLogo {
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .imgLogoD {
+    bottom: 2px;
+  }
+
+  .buttonsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttonsContainer h2 {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .left-button,
+  .right-button {
+    margin: 5px;
+    padding: 3px 31px;
+    width: auto;
+  }
+
+  .whatsIcon {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  h4 {
+    font-size: 10px;
+  }
+
+  .navItemText {
+    bottom: 14px;
   }
 }
 
@@ -597,6 +669,10 @@ section#section0 h2.pink {
 
 /* FOOTER */
 
+#section5 {
+  margin-bottom: 0px;
+}
+
 .footContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -624,6 +700,6 @@ section#section0 h2.pink {
 
 .footTitle {
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 10px;
   margin-bottom: 5px;
 }

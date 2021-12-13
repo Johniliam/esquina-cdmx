@@ -14,6 +14,9 @@ const navTo = (dest: number) => {
             break;
         case 4:
             window.location.href = '#section4';
+            break;
+        case 5:
+            window.location.href = '#section5'
             break;        
         default:
             window.location.href = '#';
